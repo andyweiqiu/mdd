@@ -30,11 +30,13 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '10.0'
 
-  s.source_files = 'mddlib/Classes/**/*'
+#源码方式
+  #s.source_files = 'mddlib/Classes/**/*'
 
   #s.preserve_paths = 'mddlib/third_lib/*.framework'
 
-  s.vendored_frameworks = 'mddlib/third_lib/openmp.framework','mddlib/third_lib/mddforward.framework'
+#framework方式
+  s.vendored_frameworks = 'mddlib/third_lib/openmp.framework','mddlib/third_lib/mddforward.framework','mddlib-0.0.1/ios/mddlib.framework'
 
   s.frameworks = 'Accelerate'
 
